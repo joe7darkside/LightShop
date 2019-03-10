@@ -519,7 +519,8 @@ a.btn.btn-primary {
 
 select.form-control.option-w3ls {
 	width: 100%;
-	padding: 1em 1em 1em 1em;
+	/* padding: 1em 1em 1em 1em; */
+	padding: 8px;
 	font-size: 0.8em;
 	margin: 0.5em 0;
 	outline: none;
@@ -552,6 +553,24 @@ select.form-control.option-w3ls {
 }
 
 button.submit.check_out {
+	display: block;
+	position: relative;
+	padding: 11px 30px;
+	letter-spacing: 1px;
+	background: #212121;
+	font-size: 1em;
+	color: #fff;
+	font-weight: 600;
+	border: none;
+	outline: none;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	text-transform: uppercase;
+}
+.submit.check_out {
 	display: block;
 	position: relative;
 	padding: 11px 30px;

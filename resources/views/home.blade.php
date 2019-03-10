@@ -6,7 +6,7 @@
 
 			<div class="header_agileits">
 				<div class="logo">
-					<h1><a class="navbar-brand" href="index.html"><span>Light</span> <i>Shop</i></a></h1>
+				<h1><a class="navbar-brand" href="{{url('/')}}"><span>Light</span> <i>Shop</i></a></h1>
 				</div>
 				<div class="overlay overlay-contentpush">
 					<button type="button" class="overlay-close"><i class="fa fa-times" aria-hidden="true"></i></button>
@@ -14,12 +14,17 @@
 					<nav>
 						<ul>
 							<li><a href="{{url('/')}}" class="active">Home</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="404.html">Team</a></li>
-							<li><a href="shop.html">Shop Now</a></li>
-							<li><a href="contact.html">Contact</a></li>
+							<li><a href="{{ url('/items') }}">Items</a></li>
+							<li><a href="{{ url('/about') }}">About</a></li>
+							<li><a href="{{ url('/contact') }}">Contact</a></li>
 							@auth
+								<li><a href="{{ url('/bookmarks') }}">Bookmarks</a></li>
 								<li><a style="color: #ff0009;" href="{{url('/logout')}}">Logout</a></li>
+								@if(auth()->user()->id == 1)
+									<li><a  style="color: #ff8507;" href="{{ url('/admin/slideshows') }}">Manage Slideshow</a></li>
+									<li><a  style="color: #ff8507;" href="{{ url('/admin/items') }}">Manage Items</a></li>
+									<li><a  style="color: #ff8507;" href="{{ url('/admin/categories') }}">Manage Categories</a></li>
+								@endif
 							@endauth
 
 							@guest
@@ -34,18 +39,6 @@
 				<div class="mobile-nav-button">
 					<button id="trigger-overlay" type="button"><i class="fa fa-bars" aria-hidden="true"></i></button>
 				</div>
-				<!-- cart details -->
-				<div class="top_nav_right">
-					<div class="shoecart shoecart2 cart cart box_1">
-						<form action="#" method="post" class="last">
-							<input type="hidden" name="cmd" value="_cart">
-							<input type="hidden" name="display" value="1">
-							<button class="top_shoe_cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
-						</form>
-					</div>
-
-				</div>
-				<!-- //cart details -->
 				<!-- search -->
 				<div class="search_w3ls_agileinfo">
 					<div class="cd-main-header">
