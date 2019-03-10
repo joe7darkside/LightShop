@@ -13,11 +13,21 @@
 
 					<nav>
 						<ul>
-							<li><a href="index.html" class="active">Home</a></li>
+							<li><a href="{{url('/')}}" class="active">Home</a></li>
 							<li><a href="about.html">About</a></li>
 							<li><a href="404.html">Team</a></li>
 							<li><a href="shop.html">Shop Now</a></li>
 							<li><a href="contact.html">Contact</a></li>
+							@auth
+								<li><a style="color: #ff0009;" href="{{url('/logout')}}">Logout</a></li>
+							@endauth
+
+							@guest
+								<li><a href="{{url('/login')}}">Login</a></li>
+							@endguest
+							@guest
+								<li><a href="{{url('/register')}}">Register</a></li>
+							@endguest
 						</ul>
 					</nav>
 				</div>
