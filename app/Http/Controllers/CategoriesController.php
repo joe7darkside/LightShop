@@ -24,7 +24,22 @@ class CategoriesController extends Controller
         }
         $category = Category::find($category_id);
         if ($category == null) return redirect('/admin/categories');
+
+        $items = Item::where('category_id', $category->id)->get();
+        foreach($items as $item) {
+            if(\File::exists(storage_path('app/public/uploads/') . $item->image1)){
+                \File::delete(storage_path('app/public/uploads/') . $item->image1);
+            }
+            if(\File::exists(storage_path('app/public/uploads/') . $item->image2)){
+                \File::delete(storage_path('app/public/uploads/') . $item->image2);
+            }
+            if(\File::exists(storage_path('app/public/uploads/') . $item->image3)){
+                \File::delete(storage_path('app/public/uploads/') . $item->image3);
+            }
+        }
         Item::where('category_id', $category->id)->delete();
+
+
         $category->delete();
         return redirect('/admin/categories');
     }

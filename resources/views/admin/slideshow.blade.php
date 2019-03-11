@@ -21,7 +21,7 @@
                                 <textarea style="width: 100%;" class="billing-address-name form-control" name="description" placeholder="some informations">{{isset($is_create) ? '' : $slideshow->description}}</textarea>
                         </div>
                         <div class="controls">
-                                <label class="control-label">Image (800x800) </label>
+                                <label class="control-label">Image (1680x750) </label>
                                 <input style="height: 54px;" class="billing-address-name form-control" type="file" name="image">
                         </div>
                     </div>

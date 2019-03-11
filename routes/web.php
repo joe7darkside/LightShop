@@ -37,38 +37,19 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('/admin/slideshows/edit/{slideshow_id}', 'SlideshowsController@update');
     Route::get('/admin/slideshows/delete/{slideshow_id}', 'SlideshowsController@delete');
 
+    // logout get route
+    Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 });
-
-
-Route::group(['middleware' => 'auth'], function () {
-
-    Route::get('/admin/test', function () {
-        if (auth()->user()->id != 1) {
-            return 'go kill your self mother fucker 🖕';
-        }
-        return view('item');
-    });
-
-
-
-    Route::get('/image/upload', function (\Illuminate\Http\Request $request) {
-       return view('upload');
-    });
-
-    Route::post('/image/upload', function (\Illuminate\Http\Request $request) {
-        $file = $request->file('image');
-        return ['file' => $file->store('uploads'), 'name' => $file->hashName()];
-    });
-
-});
-
-
-
 
 Auth::routes();
 
-Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
-
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/item', function() {
+    return view('item');
+});
+Route::get('/shop', function() {
+    return view('shop');
+});

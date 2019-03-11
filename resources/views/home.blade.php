@@ -60,47 +60,21 @@
 			<div class="slider">
 				<div class="callbacks_container">
 					<ul class="rslides callbacks callbacks1" id="slider4">
-
-						<li>
-							<div class="banner-top2">
-								<div class="banner-info-wthree">
-									<h3>Nike</h3>
-									<p>See how good they feel.</p>
-
-								</div>
-
-							</div>
-						</li>
-						<li>
-							<div class="banner-top3">
-								<div class="banner-info-wthree">
-									<h3>Heels</h3>
-									<p>For All Walks of Life.</p>
-
-								</div>
-
-							</div>
-						</li>
-						<li>
-							<div class="banner-top">
-								<div class="banner-info-wthree">
-									<h3>Sneakers</h3>
-									<p>See how good they feel.</p>
-
-								</div>
-
-							</div>
-						</li>
-						<li>
-							<div class="banner-top1">
-								<div class="banner-info-wthree">
-									<h3>Adidas</h3>
-									<p>For All Walks of Life.</p>
-
-								</div>
-
-							</div>
-						</li>
+						@foreach ($slideshows as $slideshow)
+							<li>
+							<div class="banner-top" style="background: url({{ url('/storage/uploads/' . $slideshow->image) }}) no-repeat 0px 0px">
+										<div class="banner-info-wthree">
+											<h3>
+												<a style="color: #ffff;" href="{{$slideshow->url}}">{{$slideshow->title}}</a>
+											</h3>
+											<p>{{$slideshow->description}}</p>
+		
+										</div>
+		
+									</div>
+								</li>	
+						@endforeach
+					
 					</ul>
 				</div>
 				<div class="clearfix"> </div>

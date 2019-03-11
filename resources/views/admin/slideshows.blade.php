@@ -18,10 +18,10 @@
                         <thead>
                         <tr>
                             <th>ID</th>
+                            <th>Image</th>
                             <th>Title</th>
                             <th>Description</th>
                             <th>Url</th>
-                            <th>Image</th>
                             <th></th>
                         </tr>
                         </thead>
@@ -38,7 +38,7 @@
                        
                                <td class="invert">
                                <a style="margin-left: 15px; color: blue;" href="{{ url('/admin/slideshows/edit/' . $slideshow->id) }}"><span class="fa fa-edit fa-2x"></span></a>
-                                   <a style="margin-left: 15px; color: red;" onclick="return confirm('Are you sure?')" href="{{url('/admin/slideshow/delete/' .  $slideshow->id)}}"><span class="fa fa-trash fa-2x"></span></a>
+                                   <a style="margin-left: 15px; color: red;" onclick="return confirm('Are you sure?')" href="{{url('/admin/slideshows/delete/' .  $slideshow->id)}}"><span class="fa fa-trash fa-2x"></span></a>
                                </td>
 
 

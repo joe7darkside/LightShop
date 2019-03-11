@@ -21,6 +21,9 @@
     <link href="/lightshop/css/style7.css" rel="stylesheet" type="text/css" media="all" />
     <link href="/lightshop/css/checkout.css" rel="stylesheet" type="text/css" media="all" />
     <!-- Owl-carousel-CSS -->
+    <link rel="stylesheet" href="/lightshop/css/flexslider.css" type="text/css" media="screen" />
+	<link href="/lightshop/css/easy-responsive-tabs.css" rel='stylesheet' type='text/css' />
+
     <link rel="stylesheet" type="text/css" href="/lightshop/css/contact.css">
     <link href="/lightshop/css/style.css" rel="stylesheet" type="text/css" media="all" />
     <!-- font-awesome-icons -->
