@@ -14,11 +14,11 @@
 					<nav>
 						<ul>
 							<li><a href="{{url('/')}}" class="active">Home</a></li>
-							<li><a href="{{ url('/items') }}">Items</a></li>
+							<li><a href="{{ url('/shop') }}">Items</a></li>
 							<li><a href="{{ url('/about') }}">About</a></li>
 							<li><a href="{{ url('/contact') }}">Contact</a></li>
 							@auth
-								<li><a href="{{ url('/bookmarks') }}">Bookmarks</a></li>
+								{{-- <li><a href="{{ url('/bookmarks') }}">Bookmarks</a></li> --}}
 								<li><a style="color: #ff0009;" href="{{url('/logout')}}">Logout</a></li>
 								@if(auth()->user()->id == 1)
 									<li><a  style="color: #ff8507;" href="{{ url('/admin/slideshows') }}">Manage Slideshow</a></li>
@@ -47,8 +47,8 @@
 						</ul>
 					</div>
 					<div id="cd-search" class="cd-search">
-						<form action="#" method="post">
-							<input name="Search" type="search" placeholder="Click enter after typing...">
+						<form action="{{url('/shop')}}" method="get">
+							<input name="search" type="search" placeholder="Click enter after typing...">
 						</form>
 					</div>
 				</div>

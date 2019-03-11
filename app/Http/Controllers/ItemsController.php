@@ -50,30 +50,30 @@ class ItemsController extends Controller
         $item->name = $request->name;
             $item->category_id = $request->category;
             $item->price = $request->price;
+            $item->quantity = $request->quantity;
             $item->description = $request->description;
-            if(\File::exists(storage_path('app/public/uploads/') . $item->image1)){
-                \File::delete(storage_path('app/public/uploads/') . $item->image1);
-            }
             if ($request->hasFile('image1')) {
-                // $file->hashName()
+                if(\File::exists(storage_path('app/public/uploads/') . $item->image1)){
+                    \File::delete(storage_path('app/public/uploads/') . $item->image1);
+                }
                 $image1 = $request->file('image1');
                 $image1->store('public/uploads');
                 $item->image1 = $image1->hashName();
             }
 
-            if(\File::exists(storage_path('app/public/uploads/') . $item->image2)){
-                \File::delete(storage_path('app/public/uploads/') . $item->image2);
-            }
             if ($request->hasFile('image2')) {
+                if(\File::exists(storage_path('app/public/uploads/') . $item->image2)){
+                    \File::delete(storage_path('app/public/uploads/') . $item->image2);
+                }
                 $image2 = $request->file('image2');
                 $image2->store('public/uploads');
                 $item->image2 = $image2->hashName();
             }
 
-            if(\File::exists(storage_path('app/public/uploads/') . $item->image3)){
-                \File::delete(storage_path('app/public/uploads/') . $item->image3);
-            }
             if ($request->hasFile('image3')) {
+                if(\File::exists(storage_path('app/public/uploads/') . $item->image3)){
+                    \File::delete(storage_path('app/public/uploads/') . $item->image3);
+                }
                 $image3 = $request->file('image3');
                 $image3->store('public/uploads');
                 $item->image3 = $image3->hashName();

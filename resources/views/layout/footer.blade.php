@@ -37,7 +37,7 @@
                             <h4>Our <span>Information</span> </h4>
                             <ul>
                                 <li><a href="{{url('/')}}">Home</a></li>
-                            <li><a href="{{url('items')}}">Items</a></li>
+                            <li><a href="{{url('/shop')}}">Items</a></li>
                             <li><a href="{{url('/about')}}">About</a></li>
                                 <li><a href="{{url('/contact')}}">Contact</a></li>
                             </ul>

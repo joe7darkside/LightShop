@@ -50,8 +50,10 @@ class SlideshowsController extends Controller
         $slideshow->description = $request->description;
         $slideshow->url = $request->url;
 
-        if(\File::exists(storage_path('app/public/uploads/') . $slideshow->image)){
-            \File::delete(storage_path('app/public/uploads/') . $slideshow->image);
+        if ($request->hasFile('image')) {
+            if(\File::exists(storage_path('app/public/uploads/') . $slideshow->image)){
+                \File::delete(storage_path('app/public/uploads/') . $slideshow->image);
+            }
         }
         $image = $request->file('image');
         $image->store('public/uploads');
