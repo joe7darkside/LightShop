@@ -96,7 +96,7 @@
 	<div class="grids_bottom">
 		<div class="style-grids">
 			<div class="col-md-6 style-grid style-grid-1">
-				<img src="/lightshop/images/b1.jpg" alt="shoe">
+				<img src="/lightshop/images/fan1.png" alt="shoe">
 			</div>
 		</div>
 		<div class="col-md-6 style-grid style-grid-2">
@@ -111,7 +111,7 @@
 				</div>
 			</div>
 			<div class="style-image-2">
-				<img src="/lightshop/images/b2.jpg" alt="shoe">
+				<img src="/lightshop/images/fan2.png" alt="shoe">
 				<div class="style-grid-2-text">
 					<h3>Air force</h3>
 				</div>
@@ -136,7 +136,7 @@
 					</div>
 				</div>
 				<div class="style-image-2">
-					<img src="/lightshop/images/b4.jpg" alt="shoe">
+					<img src="/lightshop/images/fan3.png" alt="shoe">
 					<div class="style-grid-2-text">
 						<h3>Air force</h3>
 					</div>
@@ -145,7 +145,7 @@
 			<div class="col-md-6 grids_sec_2_left">
 
 				<div class="style-image-2">
-					<img src="/lightshop/images/b3.jpg" alt="shoe">
+					<img src="/lightshop/images/fan4.png" alt="shoe">
 					<div class="style-grid-2-text">
 						<h3>Air force</h3>
 					</div>
@@ -183,29 +183,29 @@
 					<div class="item active">
 						<div class="row">
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="/lightshop/images/g1.jpg" alt="Image" style="max-width:100%;"></div>
+								<div class="thumbnail"><img src="/lightshop/images/fan1.png" alt="Image" style="max-width:100%;"></div>
 							</div>
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="/lightshop/images/g2.jpg" alt="Image" style="max-width:100%;"></div>
+								<div class="thumbnail"><img src="/lightshop/images/fan2.png" alt="Image" style="max-width:100%;"></div>
 							</div>
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="/lightshop/images/g3.jpg" alt="Image" style="max-width:100%;"></div>
+								<div class="thumbnail"><img src="/lightshop/images/fan3.png" alt="Image" style="max-width:100%;"></div>
 							</div>
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="/lightshop/images/g4.jpg" alt="Image" style="max-width:100%;"></div>
+								<div class="thumbnail"><img src="/lightshop/images/fan4.png" alt="Image" style="max-width:100%;"></div>
 							</div>
 						</div>
 					</div>
 					<div class="item">
 						<div class="row">
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="/lightshop/images/g5.jpg" alt="Image" style="max-width:100%;"></div>
+								<div class="thumbnail"><img src="/lightshop/images/fan1.png" alt="Image" style="max-width:100%;"></div>
 							</div>
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
 								<div class="thumbnail"><img src="/lightshop/images/g6.jpg" alt="Image" style="max-width:100%;"></div>
 							</div>
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="/lightshop/images/g2.jpg" alt="Image" style="max-width:100%;"></div>
+								<div class="thumbnail"><img src="/lightshop/images/fan3.png" alt="Image" style="max-width:100%;"></div>
 							</div>
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
 								<div class="thumbnail"><img src="/lightshop/images/g1.jpg" alt="Image" style="max-width:100%;"></div>
@@ -234,13 +234,13 @@
 								<div class="thumbnail"><img src="/lightshop/images/g1.jpg" alt="Image" style="max-width:100%;"></div>
 							</div>
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="/lightshop/images/g2.jpg" alt="Image" style="max-width:100%;"></div>
+								<div class="thumbnail"><img src="/lightshop/images/fan4.png" alt="Image" style="max-width:100%;"></div>
 							</div>
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
 								<div class="thumbnail"><img src="/lightshop/images/g3.jpg" alt="Image" style="max-width:100%;"></div>
 							</div>
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="/lightshop/images/g4.jpg" alt="Image" style="max-width:100%;"></div>
+								<div class="thumbnail"><img src="/lightshop/images/fan2.png" alt="Image" style="max-width:100%;"></div>
 							</div>
 						</div>
 					</div>
