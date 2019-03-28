@@ -106,7 +106,7 @@
 					<p>Itaque earum rerum hic tenetur a sapiente delectus reiciendis maiores alias consequatur.sed quia non numquam eius modi
 						tempora incidunt ut labore et dolore .</p>
 					<div class="shop-button">
-						<a href="shop.html">Shop Now</a>
+						<a href="{{ url('/shop') }}">Shop Now</a>
 					</div>
 				</div>
 			</div>
@@ -131,7 +131,7 @@
 						<p>Itaque earum rerum hic tenetur a sapiente delectus reiciendis maiores alias consequatur.sed quia non numquam eius modi
 							tempora incidunt ut labore .</p>
 						<div class="shop-button">
-							<a href="shop.html">Shop Now</a>
+							<a href="{{ url('/shop') }}">Shop Now</a>
 						</div>
 					</div>
 				</div>
@@ -156,7 +156,7 @@
 						<p>Itaque earum rerum hic tenetur a sapiente delectus reiciendis maiores alias consequatur.sed quia non numquam eius modi
 							tempora incidunt ut labore .</p>
 						<div class="shop-button two">
-							<a href="shop.html">Shop Now</a>
+							<a href="{{ url('/shop') }}">Shop Now</a>
 						</div>
 					</div>
 				</div>
